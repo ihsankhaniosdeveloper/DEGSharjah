@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapVC" customModule="IhsanKhanTest" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="LJX-lZ-jyp" id="xEt-2X-zc6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxe-Bm-hrg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LJX-lZ-jyp">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        </mapView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LJX-lZ-jyp" secondAttribute="trailing" id="Bfw-Qm-enb"/>
+                        <constraint firstItem="LJX-lZ-jyp" firstAttribute="leading" secondItem="rxe-Bm-hrg" secondAttribute="leading" id="QtW-oI-gvt"/>
+                        <constraint firstAttribute="bottom" secondItem="LJX-lZ-jyp" secondAttribute="bottom" id="RnP-NZ-dni"/>
+                        <constraint firstItem="LJX-lZ-jyp" firstAttribute="top" secondItem="rxe-Bm-hrg" secondAttribute="top" id="st0-vd-obe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rxe-Bm-hrg" secondAttribute="bottom" id="aFm-dS-Yjc"/>
+                <constraint firstItem="rxe-Bm-hrg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cYh-vw-hGY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rxe-Bm-hrg" secondAttribute="trailing" id="di9-Id-piJ"/>
+                <constraint firstItem="rxe-Bm-hrg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="e2g-jF-xoQ"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
